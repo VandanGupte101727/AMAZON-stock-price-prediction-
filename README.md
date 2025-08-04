@@ -50,3 +50,8 @@ The project uses a CSV file (example: `AMAZON_monthly.csv`) with the following c
 - The label is derived by comparing the next day's closing price with the current day's:
   ```python
   data['Signal'] = (data['Close'].shift(-1) > data['Close']).map({True: 1, False: -1})
+
+
+This project demonstrates how the K-Nearest Neighbors (KNN) algorithm can be applied to both regression and classification problems in the context of stock market data. While KNN provides a simple and interpretable approach, it is sensitive to the scale of data and may not perform well with high-dimensional or noisy datasets.For more robust performance in real-world trading applications, advanced models such as ensemble methods, time series models, or deep learning approaches may be explored.
+
+
